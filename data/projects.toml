@@ -1,0 +1,31 @@
+[[project]]
+title_en = "AI-Powered Data Intelligence"
+title_es = "Inteligencia de Datos con IA"
+description_en = "End-to-end systems that scrape, aggregate, and analyze market data at scale. Automated pipelines processing thousands of listings daily, with AI-powered deal scoring and price intelligence."
+description_es = "Sistemas end-to-end que scrappean, agregan y analizan datos de mercado a escala. Pipelines automatizados procesando miles de listings diarios, con scoring de ofertas y inteligencia de precios con IA."
+tags = ["Python", "FastAPI", "PostgreSQL", "asyncio"]
+icon = "chart"
+
+[[project]]
+title_en = "Business Process Automation"
+title_es = "Automatizacion de Procesos"
+description_en = "Workflow automation using n8n + Claude API + WhatsApp Business for SMBs. Appointment management, automated responses, invoice processing, and intelligent triage systems."
+description_es = "Automatizacion de flujos con n8n + Claude API + WhatsApp Business para PYMEs. Gestion de citas, respuestas automaticas, procesamiento de facturas y sistemas de triaje inteligente."
+tags = ["n8n", "Claude API", "WhatsApp", "Automation"]
+icon = "gear"
+
+[[project]]
+title_en = "Detection & Security Systems"
+title_es = "Sistemas de Deteccion y Seguridad"
+description_en = "Enterprise-scale automation frameworks processing 200+ events/week with 78% automation coverage. AI-assisted triage reducing response times from 45 minutes to 5 minutes."
+description_es = "Frameworks de automatizacion a escala enterprise procesando 200+ eventos/semana con 78% de cobertura. Triaje asistido por IA reduciendo tiempos de respuesta de 45 minutos a 5."
+tags = ["SIEM", "Python", "ML", "AWS"]
+icon = "shield"
+
+[[project]]
+title_en = "Conversational AI Agents"
+title_es = "Agentes Conversacionales con IA"
+description_en = "Conversational onboarding flows and intelligent data capture using Claude API. Structured output extraction, multi-turn conversations, and AI-driven features for web applications."
+description_es = "Flujos conversacionales de onboarding y captura inteligente de datos con Claude API. Extraccion de datos estructurados, conversaciones multi-turno y funcionalidades IA para aplicaciones web."
+tags = ["Claude API", "LLM", "React", "HTMX"]
+icon = "bot"

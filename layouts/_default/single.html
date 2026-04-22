@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="page">
+  <div class="container container--narrow">
+    <h1 class="page__title">{{ .Title }}</h1>
+    <div class="page__meta">
+      <time>{{ .Date.Format "January 2, 2006" }}</time>
+      <span>&middot;</span>
+      <span>{{ .ReadingTime }} {{ i18n "reading_time" }}</span>
+    </div>
+    <div class="page__content prose">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,20 @@
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="{{ .Site.Home.Permalink }}" class="nav__logo">JM</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav__toggle-input" aria-label="Toggle menu">
+    <label for="nav-toggle" class="nav__toggle" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <div class="nav__menu">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="nav__link">{{ .Name }}</a>
+      {{ end }}
+
+      {{ with .Translations }}{{ range . }}
+      <a href="{{ .Permalink }}" class="nav__lang">{{ i18n "language_switch" }}</a>
+      {{ end }}{{ end }}
+    </div>
+  </div>
+</nav>

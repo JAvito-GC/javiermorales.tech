@@ -1,0 +1,79 @@
+baseURL = "https://javiermorales.tech/"
+title = "Javier Morales"
+languageCode = "en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages]
+  [languages.en]
+    languageName = "EN"
+    weight = 1
+    title = "Javier Morales"
+    [languages.en.params]
+      description = "AI Automation Engineer | Technical Builder | Solopreneur"
+
+  [languages.es]
+    languageName = "ES"
+    weight = 2
+    title = "Javier Morales"
+    [languages.es.params]
+      description = "Ingeniero de Automatizacion IA | Constructor Tecnico | Emprendedor"
+
+[languages.en.menus]
+  [[languages.en.menus.main]]
+    name = "About"
+    url = "/#about"
+    weight = 1
+  [[languages.en.menus.main]]
+    name = "Work"
+    url = "/#projects"
+    weight = 2
+  [[languages.en.menus.main]]
+    name = "Experience"
+    url = "/#experience"
+    weight = 3
+  [[languages.en.menus.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
+  [[languages.en.menus.main]]
+    name = "Contact"
+    url = "/#contact"
+    weight = 5
+
+[languages.es.menus]
+  [[languages.es.menus.main]]
+    name = "Sobre mi"
+    url = "/es/#about"
+    weight = 1
+  [[languages.es.menus.main]]
+    name = "Proyectos"
+    url = "/es/#projects"
+    weight = 2
+  [[languages.es.menus.main]]
+    name = "Experiencia"
+    url = "/es/#experience"
+    weight = 3
+  [[languages.es.menus.main]]
+    name = "Blog"
+    url = "/es/blog/"
+    weight = 4
+  [[languages.es.menus.main]]
+    name = "Contacto"
+    url = "/es/#contact"
+    weight = 5
+
+[params]
+  email = "moralesjmoreno@gmail.com"
+  linkedin = "https://linkedin.com/in/javiermoralesm"
+  github = "https://github.com/JAvito-GC"
+  location = "Gran Canaria, Spain"

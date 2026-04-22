@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="page">
+  <div class="container container--narrow">
+    <a href="{{ "blog/" | relLangURL }}" class="page__back">&larr; Blog</a>
+    <h1 class="page__title">{{ .Title }}</h1>
+    <div class="page__meta">
+      <time>{{ .Date.Format "January 2, 2006" }}</time>
+      <span>&middot;</span>
+      <span>{{ .ReadingTime }} {{ i18n "reading_time" }}</span>
+      {{ with .Translations }}
+      <span>&middot;</span>
+      {{ range . }}<a href="{{ .Permalink }}" class="page__lang-link">{{ .Lang | upper }}</a>{{ end }}
+      {{ end }}
+    </div>
+    <div class="page__content prose">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

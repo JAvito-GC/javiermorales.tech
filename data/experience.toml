@@ -1,0 +1,65 @@
+[[job]]
+title_en = "Staff Security Engineer"
+title_es = "Staff Security Engineer"
+company = "Enterprise SaaS"
+location = "Remote, Gran Canaria"
+dates = "2023 — Present"
+bullets_en = [
+  "Architected automation frameworks achieving 45% reduction in operational noise through AI-assisted triage",
+  "Built orchestration workflows processing 200+ events/week with 78% automation coverage",
+  "Designed MCP integration architecture connecting 6+ platforms for automated investigation",
+  "Reduced mean time to triage from 45 minutes to 5 minutes through AI/ML automation",
+]
+bullets_es = [
+  "Arquitectura de frameworks de automatizacion logrando 45% de reduccion de ruido operacional con triaje IA",
+  "Workflows de orquestacion procesando 200+ eventos/semana con 78% de cobertura automatizada",
+  "Arquitectura de integracion MCP conectando 6+ plataformas para investigacion automatizada",
+  "Reduccion del tiempo medio de triaje de 45 minutos a 5 minutos con automatizacion IA/ML",
+]
+
+[[job]]
+title_en = "Platform & Security Engineer"
+title_es = "Ingeniero de Plataforma y Seguridad"
+company = "The Workshop"
+location = "Malaga, Spain"
+dates = "2021 — 2022"
+bullets_en = [
+  "Managed multi-site infrastructure on OpenStack/VMware with automated deployments",
+  "Integrated SIEM and forensic tooling, reducing false positives by 30%",
+  "Implemented compliance-as-code for SOC 2, ISO 27001, NIST frameworks",
+]
+bullets_es = [
+  "Gestion de infraestructura multi-sede en OpenStack/VMware con despliegues automatizados",
+  "Integracion de SIEM y herramientas forenses, reduciendo falsos positivos un 30%",
+  "Implementacion de compliance-as-code para SOC 2, ISO 27001, NIST",
+]
+
+[[job]]
+title_en = "Senior Cloud Engineer"
+title_es = "Ingeniero Cloud Senior"
+company = "eSentire"
+location = "Cork, Ireland"
+dates = "2018 — 2021"
+bullets_en = [
+  "Managed AWS infrastructure for managed detection and response services",
+  "Designed ETL pipelines and optimized database queries for high-volume data processing",
+  "Technical lead on infrastructure projects, overseeing planning and SLA delivery",
+]
+bullets_es = [
+  "Gestion de infraestructura AWS para servicios de deteccion y respuesta gestionada",
+  "Diseno de pipelines ETL y optimizacion de consultas para procesamiento de datos de alto volumen",
+  "Lider tecnico en proyectos de infraestructura, supervisando planificacion y entrega de SLAs",
+]
+
+[[job]]
+title_en = "Earlier Career"
+title_es = "Carrera Anterior"
+company = "VMware, Havas Media, Roche, Vodafone"
+location = "Ireland & Spain"
+dates = "2010 — 2018"
+bullets_en = [
+  "VMware advanced troubleshooting, DBA (PostgreSQL/MySQL/Oracle), AWS operations, IT systems administration",
+]
+bullets_es = [
+  "Troubleshooting avanzado VMware, DBA (PostgreSQL/MySQL/Oracle), operaciones AWS, administracion de sistemas IT",
+]

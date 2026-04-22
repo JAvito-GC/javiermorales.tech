@@ -1,0 +1,44 @@
+[hero_tagline]
+other = "I build AI-powered systems that work while you sleep."
+
+[hero_cta]
+other = "See my work"
+
+[about_title]
+other = "About"
+
+[about_text]
+other = "Engineer with 15+ years building and automating complex systems across cloud infrastructure, security operations, and AI-driven workflows. Currently focused on building AI-powered products and automation solutions — from intelligent data pipelines and price intelligence platforms to conversational AI agents. Combining deep technical expertise with entrepreneurial execution to ship products that solve real problems."
+
+[projects_title]
+other = "What I Build"
+
+[stack_title]
+other = "Technical Stack"
+
+[experience_title]
+other = "Experience"
+
+[blog_title]
+other = "Latest from the Blog"
+
+[blog_read_more]
+other = "Read more"
+
+[blog_view_all]
+other = "View all posts"
+
+[contact_title]
+other = "Let's Talk"
+
+[contact_text]
+other = "Building something interesting? I'm always open to collaboration on AI automation, data intelligence, and technical projects."
+
+[footer_location]
+other = "Based in Gran Canaria, Spain"
+
+[language_switch]
+other = "ES"
+
+[reading_time]
+other = "min read"

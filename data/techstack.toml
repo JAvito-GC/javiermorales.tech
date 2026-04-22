@@ -1,0 +1,29 @@
+[[category]]
+name_en = "AI & Automation"
+name_es = "IA & Automatizacion"
+items = ["Claude API", "n8n", "OpenAI", "MCP", "Prompt Engineering", "LLM Integration"]
+
+[[category]]
+name_en = "Backend & Data"
+name_es = "Backend & Datos"
+items = ["Python", "FastAPI", "PostgreSQL", "PostGIS", "Supabase", "Redis"]
+
+[[category]]
+name_en = "Frontend"
+name_es = "Frontend"
+items = ["React", "HTMX", "Tailwind CSS", "PWA", "Vite"]
+
+[[category]]
+name_en = "Infrastructure"
+name_es = "Infraestructura"
+items = ["AWS", "Terraform", "Docker", "Linux", "Kubernetes", "CI/CD"]
+
+[[category]]
+name_en = "Web Scraping"
+name_es = "Web Scraping"
+items = ["httpx", "asyncio", "Firecrawl", "BeautifulSoup", "Playwright"]
+
+[[category]]
+name_en = "APIs & Integration"
+name_es = "APIs & Integracion"
+items = ["WhatsApp Business", "Telegram Bot", "Stripe", "Shopify", "Resend"]

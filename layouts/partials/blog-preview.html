@@ -1,0 +1,21 @@
+{{ $blog := where .Site.RegularPages "Section" "blog" }}
+{{ if $blog }}
+<section class="section section--dark" id="blog">
+  <div class="container">
+    <h2 class="section__title">{{ i18n "blog_title" }}</h2>
+    <div class="blog-grid">
+      {{ range first 3 $blog }}
+      <a href="{{ .Permalink }}" class="blog-card">
+        <time class="blog-card__date">{{ .Date.Format "Jan 2, 2006" }}</time>
+        <h3 class="blog-card__title">{{ .Title }}</h3>
+        <p class="blog-card__summary">{{ .Summary }}</p>
+        <span class="blog-card__read">{{ i18n "blog_read_more" }} &rarr;</span>
+      </a>
+      {{ end }}
+    </div>
+    <div class="blog-grid__more">
+      <a href="{{ "blog/" | relLangURL }}" class="btn btn--outline">{{ i18n "blog_view_all" }}</a>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,24 @@
+<section class="section" id="experience">
+  <div class="container">
+    <h2 class="section__title">{{ i18n "experience_title" }}</h2>
+    <div class="timeline">
+      {{ range .Site.Data.experience.job }}
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__dates">{{ .dates }}</span>
+          <h3 class="timeline__title">{{ if eq $.Lang "es" }}{{ .title_es }}{{ else }}{{ .title_en }}{{ end }}</h3>
+          <p class="timeline__company">{{ .company }} &middot; {{ .location }}</p>
+          <ul class="timeline__bullets">
+            {{ if eq $.Lang "es" }}
+              {{ range .bullets_es }}<li>{{ . }}</li>{{ end }}
+            {{ else }}
+              {{ range .bullets_en }}<li>{{ . }}</li>{{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

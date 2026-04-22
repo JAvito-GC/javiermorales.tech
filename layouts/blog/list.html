@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="page">
+  <div class="container">
+    <h1 class="page__title">Blog</h1>
+    <div class="blog-grid blog-grid--full">
+      {{ range .Paginator.Pages }}
+      <a href="{{ .Permalink }}" class="blog-card">
+        <time class="blog-card__date">{{ .Date.Format "Jan 2, 2006" }}</time>
+        <h3 class="blog-card__title">{{ .Title }}</h3>
+        <p class="blog-card__summary">{{ .Summary }}</p>
+        <span class="blog-card__read">{{ i18n "blog_read_more" }} &rarr;</span>
+      </a>
+      {{ end }}
+    </div>
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</div>
+{{ end }}
