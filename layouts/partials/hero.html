@@ -3,8 +3,25 @@
   <div class="hero__content">
     <p class="hero__greeting">{{ if eq .Lang "es" }}Hola, soy{{ else }}Hello, I'm{{ end }}</p>
     <h1 class="hero__name">Javier<br>Morales</h1>
-    <p class="hero__tagline">{{ i18n "hero_tagline" }}</p>
+    <p class="hero__tagline"><span class="hero__tagline-text" id="typewriter"></span></p>
     <p class="hero__subtitle">{{ .Site.Params.description }}</p>
     <a href="#projects" class="hero__cta">{{ i18n "hero_cta" }}<span class="hero__cta-arrow">&darr;</span></a>
   </div>
+  <script>
+  (function(){
+    var text = {{ i18n "hero_tagline" }};
+    var el = document.getElementById('typewriter');
+    var i = 0;
+    function type(){
+      if(i <= text.length){
+        el.textContent = text.slice(0, i);
+        i++;
+        setTimeout(type, 45);
+      } else {
+        el.classList.add('hero__tagline-text--done');
+      }
+    }
+    setTimeout(type, 1200);
+  })();
+  </script>
 </section>

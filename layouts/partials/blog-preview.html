@@ -2,10 +2,10 @@
 {{ if $blog }}
 <section class="section section--dark" id="blog">
   <div class="container">
-    <h2 class="section__title">{{ i18n "blog_title" }}</h2>
+    <h2 class="section__title reveal">{{ i18n "blog_title" }}</h2>
     <div class="blog-grid">
       {{ range first 3 $blog }}
-      <a href="{{ .Permalink }}" class="blog-card">
+      <a href="{{ .Permalink }}" class="blog-card reveal">
         <time class="blog-card__date">{{ .Date.Format "Jan 2, 2006" }}</time>
         <h3 class="blog-card__title">{{ .Title }}</h3>
         <p class="blog-card__summary">{{ .Summary }}</p>

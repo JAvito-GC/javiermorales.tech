@@ -29,10 +29,10 @@ other = "Read more"
 other = "View all posts"
 
 [contact_title]
-other = "Let's Talk"
+other = "Let's Build Something"
 
 [contact_text]
-other = "Building something interesting? I'm always open to collaboration on AI automation, data intelligence, and technical projects."
+other = "I turn fragmented data into automated intelligence systems. If you have a project that needs AI automation, data pipelines, or security engineering — let's talk."
 
 [footer_location]
 other = "Based in Gran Canaria, Spain"

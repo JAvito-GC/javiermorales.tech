@@ -1,26 +1,52 @@
 <section class="section" id="projects">
   <div class="container">
-    <h2 class="section__title">{{ i18n "projects_title" }}</h2>
+    <h2 class="section__title reveal">{{ i18n "projects_title" }}</h2>
     <div class="projects__grid">
-      {{ range .Site.Data.projects.project }}
-      <div class="project-card">
+
+      {{ range $i, $p := .Site.Data.projects.project }}
+      {{ if eq $p.featured true }}
+      <div class="project-card project-card--featured reveal">
+        <div class="project-card__visual">
+          <img src="/img/motoradar-preview.svg" alt="MotoRadar" loading="lazy">
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__badge">{{ if eq $.Lang "es" }}Proyecto Destacado{{ else }}Featured Project{{ end }}</span>
+          <h3 class="project-card__title">{{ if eq $.Lang "es" }}{{ $p.title_es }}{{ else }}{{ $p.title_en }}{{ end }}</h3>
+          <p class="project-card__desc">{{ if eq $.Lang "es" }}{{ $p.description_es }}{{ else }}{{ $p.description_en }}{{ end }}</p>
+          <div class="project-card__tags">
+            {{ range $p.tags }}<span class="tag">{{ . }}</span>{{ end }}
+          </div>
+          <div class="project-card__metrics">
+            {{ range $p.metrics }}
+            <div class="project-card__metric">
+              <span class="project-card__metric-value">{{ .value }}</span>
+              <span class="project-card__metric-label">{{ if eq $.Lang "es" }}{{ .label_es }}{{ else }}{{ .label_en }}{{ end }}</span>
+            </div>
+            {{ end }}
+          </div>
+          {{ with $p.url }}<a href="{{ . }}" target="_blank" rel="noopener" class="project-card__link">{{ if eq $.Lang "es" }}Ver proyecto{{ else }}View project{{ end }} &rarr;</a>{{ end }}
+        </div>
+      </div>
+      {{ else }}
+      <div class="project-card reveal">
         <div class="project-card__icon">
-          {{ if eq .icon "chart" }}
+          {{ if eq $p.icon "chart" }}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 5-9"/></svg>
-          {{ else if eq .icon "gear" }}
+          {{ else if eq $p.icon "gear" }}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-          {{ else if eq .icon "shield" }}
+          {{ else if eq $p.icon "shield" }}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          {{ else if eq .icon "bot" }}
+          {{ else if eq $p.icon "bot" }}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><circle cx="8" cy="16" r="1"/><circle cx="16" cy="16" r="1"/></svg>
           {{ end }}
         </div>
-        <h3 class="project-card__title">{{ if eq $.Lang "es" }}{{ .title_es }}{{ else }}{{ .title_en }}{{ end }}</h3>
-        <p class="project-card__desc">{{ if eq $.Lang "es" }}{{ .description_es }}{{ else }}{{ .description_en }}{{ end }}</p>
+        <h3 class="project-card__title">{{ if eq $.Lang "es" }}{{ $p.title_es }}{{ else }}{{ $p.title_en }}{{ end }}</h3>
+        <p class="project-card__desc">{{ if eq $.Lang "es" }}{{ $p.description_es }}{{ else }}{{ $p.description_en }}{{ end }}</p>
         <div class="project-card__tags">
-          {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+          {{ range $p.tags }}<span class="tag">{{ . }}</span>{{ end }}
         </div>
       </div>
+      {{ end }}
       {{ end }}
     </div>
   </div>

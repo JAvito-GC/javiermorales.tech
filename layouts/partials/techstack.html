@@ -1,9 +1,9 @@
 <section class="section section--dark" id="stack">
   <div class="container">
-    <h2 class="section__title">{{ i18n "stack_title" }}</h2>
+    <h2 class="section__title reveal">{{ i18n "stack_title" }}</h2>
     <div class="stack__grid">
       {{ range .Site.Data.techstack.category }}
-      <div class="stack__category">
+      <div class="stack__category reveal">
         <h3 class="stack__name">{{ if eq $.Lang "es" }}{{ .name_es }}{{ else }}{{ .name_en }}{{ end }}</h3>
         <div class="stack__items">
           {{ range .items }}<span class="stack__item">{{ . }}</span>{{ end }}

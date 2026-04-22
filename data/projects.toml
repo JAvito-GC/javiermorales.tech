@@ -1,10 +1,35 @@
 [[project]]
-title_en = "AI-Powered Data Intelligence"
-title_es = "Inteligencia de Datos con IA"
-description_en = "End-to-end systems that scrape, aggregate, and analyze market data at scale. Automated pipelines processing thousands of listings daily, with AI-powered deal scoring and price intelligence."
-description_es = "Sistemas end-to-end que scrappean, agregan y analizan datos de mercado a escala. Pipelines automatizados procesando miles de listings diarios, con scoring de ofertas y inteligencia de precios con IA."
-tags = ["Python", "FastAPI", "PostgreSQL", "asyncio"]
+title_en = "MotoRadar — Price Intelligence for Motorcycles"
+title_es = "MotoRadar — Inteligencia de Precios de Motos"
+description_en = "Full-stack price comparison engine for second-hand enduro and trail motorcycles in Spain. Aggregates listings from 4 platforms, applies z-score deal scoring, tracks price trends, and detects outliers. Built with FastAPI, PostgreSQL, HTMX, and a custom browser extension for data collection."
+description_es = "Motor de comparacion de precios de motos enduro y trail de segunda mano en Espana. Agrega listings de 4 plataformas, aplica scoring de ofertas con z-score, rastrea tendencias de precios y detecta outliers. Construido con FastAPI, PostgreSQL, HTMX y una extension de navegador para recoleccion de datos."
+tags = ["Python", "FastAPI", "PostgreSQL", "HTMX", "Playwright"]
 icon = "chart"
+featured = true
+url = "https://motoradar.es"
+
+  [[project.metrics]]
+  value = "1,500+"
+  label_en = "Active Listings"
+  label_es = "Listings Activos"
+
+  [[project.metrics]]
+  value = "4"
+  label_en = "Data Sources"
+  label_es = "Fuentes de Datos"
+
+  [[project.metrics]]
+  value = "6h"
+  label_en = "Update Cycle"
+  label_es = "Ciclo de Actualizacion"
+
+[[project]]
+title_en = "AI Security Guardrails"
+title_es = "Guardrails de Seguridad para IA"
+description_en = "Open-source defense system for AI coding assistants. Pre/post-tool hooks, prompt injection detection with regex + ML, credential leak scanning, integrity verification with SHA256 checksums. 68+ automated tests."
+description_es = "Sistema de defensa open-source para asistentes de codigo IA. Hooks pre/post-herramienta, deteccion de prompt injection con regex + ML, escaneo de credenciales, verificacion de integridad con checksums SHA256. 68+ tests automatizados."
+tags = ["Python", "Bash", "ModernBERT", "Security"]
+icon = "shield"
 
 [[project]]
 title_en = "Business Process Automation"
@@ -13,14 +38,6 @@ description_en = "Workflow automation using n8n + Claude API + WhatsApp Business
 description_es = "Automatizacion de flujos con n8n + Claude API + WhatsApp Business para PYMEs. Gestion de citas, respuestas automaticas, procesamiento de facturas y sistemas de triaje inteligente."
 tags = ["n8n", "Claude API", "WhatsApp", "Automation"]
 icon = "gear"
-
-[[project]]
-title_en = "Detection & Security Systems"
-title_es = "Sistemas de Deteccion y Seguridad"
-description_en = "Enterprise-scale automation frameworks processing 200+ events/week with 78% automation coverage. AI-assisted triage reducing response times from 45 minutes to 5 minutes."
-description_es = "Frameworks de automatizacion a escala enterprise procesando 200+ eventos/semana con 78% de cobertura. Triaje asistido por IA reduciendo tiempos de respuesta de 45 minutos a 5."
-tags = ["SIEM", "Python", "ML", "AWS"]
-icon = "shield"
 
 [[project]]
 title_en = "Conversational AI Agents"
