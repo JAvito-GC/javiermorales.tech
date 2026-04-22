@@ -5,22 +5,27 @@
       <div class="about__text reveal">
         <p>{{ i18n "about_text" }}</p>
       </div>
-      <div class="about__details reveal reveal--delay-2">
-        <div class="about__detail">
-          <span class="about__label">{{ if eq .Lang "es" }}Ubicacion{{ else }}Location{{ end }}</span>
-          <span class="about__value">Gran Canaria, Spain</span>
+      <div class="about__sidebar reveal reveal--delay-2">
+        <div class="about__photo">
+          <img src="/img/javier-morales.png" alt="Javier Morales" loading="lazy">
         </div>
-        <div class="about__detail">
-          <span class="about__label">{{ if eq .Lang "es" }}Experiencia{{ else }}Experience{{ end }}</span>
-          <span class="about__value">15+ {{ if eq .Lang "es" }}anos{{ else }}years{{ end }}</span>
-        </div>
-        <div class="about__detail">
-          <span class="about__label">{{ if eq .Lang "es" }}Enfoque{{ else }}Focus{{ end }}</span>
-          <span class="about__value">AI & Automation</span>
-        </div>
-        <div class="about__detail">
-          <span class="about__label">{{ if eq .Lang "es" }}Idiomas{{ else }}Languages{{ end }}</span>
-          <span class="about__value">ES / EN / PT</span>
+        <div class="about__details">
+          <div class="about__detail">
+            <span class="about__label">{{ if eq .Lang "es" }}Ubicacion{{ else }}Location{{ end }}</span>
+            <span class="about__value">Gran Canaria, Spain</span>
+          </div>
+          <div class="about__detail">
+            <span class="about__label">{{ if eq .Lang "es" }}Experiencia{{ else }}Experience{{ end }}</span>
+            <span class="about__value">15+ {{ if eq .Lang "es" }}anos{{ else }}years{{ end }}</span>
+          </div>
+          <div class="about__detail">
+            <span class="about__label">{{ if eq .Lang "es" }}Enfoque{{ else }}Focus{{ end }}</span>
+            <span class="about__value">AI & Automation</span>
+          </div>
+          <div class="about__detail">
+            <span class="about__label">{{ if eq .Lang "es" }}Idiomas{{ else }}Languages{{ end }}</span>
+            <span class="about__value">ES / EN / PT</span>
+          </div>
         </div>
       </div>
     </div>

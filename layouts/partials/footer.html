@@ -1,8 +1,21 @@
 <footer class="footer" id="contact">
   <div class="container">
-    <h2 class="section__title">{{ i18n "contact_title" }}</h2>
-    <p class="footer__text">{{ i18n "contact_text" }}</p>
-    <div class="footer__links">
+    <h2 class="section__title reveal">{{ i18n "contact_title" }}</h2>
+    <p class="footer__text reveal">{{ i18n "contact_text" }}</p>
+
+    <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xpwdkjqr" method="POST">
+      <div class="contact-form__row">
+        <input type="text" name="name" class="contact-form__input" placeholder="{{ if eq .Lang "es" }}Nombre{{ else }}Name{{ end }}" required>
+        <input type="email" name="email" class="contact-form__input" placeholder="Email" required>
+      </div>
+      <textarea name="message" class="contact-form__textarea" placeholder="{{ if eq .Lang "es" }}Tu mensaje...{{ else }}Your message...{{ end }}" required></textarea>
+      <button type="submit" class="contact-form__submit">{{ if eq .Lang "es" }}Enviar mensaje{{ else }}Send message{{ end }} &rarr;</button>
+    </form>
+    <div class="contact-form__success" id="form-success">
+      {{ if eq .Lang "es" }}Mensaje enviado. Te respondere pronto.{{ else }}Message sent. I'll get back to you soon.{{ end }}
+    </div>
+
+    <div class="footer__links reveal">
       <a href="mailto:{{ .Site.Params.email }}" target="_blank" rel="noopener" class="footer__link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
         Email
@@ -21,4 +34,22 @@
       <p class="footer__copy">&copy; {{ now.Year }} Javier Morales</p>
     </div>
   </div>
+  <script>
+  (function(){
+    var form = document.getElementById('contact-form');
+    var success = document.getElementById('form-success');
+    if(!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch(form.action, {method:'POST', body:data, headers:{'Accept':'application/json'}})
+        .then(function(r){
+          if(r.ok){
+            form.style.display='none';
+            success.style.display='block';
+          }
+        });
+    });
+  })();
+  </script>
 </footer>
