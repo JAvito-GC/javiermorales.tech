@@ -2,14 +2,14 @@
 title: "Corrí Mi Auditor de Agentes Contra los Repos Más Votados. Encontró Bugs Reales, y Me Dejó en Evidencia."
 date: 2026-09-21
 description: "Apunté mi linter de seguridad de agentes (MIT) a ECC (264k estrellas) y Agentic Bug Hunter (5k). Cazó riesgos reales de cadena de suministro y hooks, y falsos positivos que me enseñaron más que los aciertos."
-summary: "Corrí mi auditor de agentes open-source contra los dos repos de agentes más votados de GitHub. Encontró servidores MCP sin pinear, hooks fuera del modelo e instaladores arriesgados, y también marcó defensas de inyección como ataques y sustantivos como acciones destructivas. El antes y el después honesto."
+summary: "Corrí mi auditor de agentes open-source contra dos de los repos de agentes más comentados de GitHub. Encontró servidores MCP sin pinear, hooks fuera del modelo e instaladores arriesgados, y también marcó defensas de inyección como ataques y sustantivos como acciones destructivas. El antes y el después honesto."
 translationKey: "audited-top-agent-repos"
 draft: false
 og_image: "/img/og-default.png"
 tags: ["security", "agent-security", "supply-chain", "detection-engineering", "ai-security"]
 ---
 
-Hace unos días escribí que popular no es lo mismo que auditado por ti. Así que apunté mi auditor de agentes open-source a los dos proyectos de agentes más votados de GitHub, Everything Claude Code (264k estrellas) y Agentic Bug Hunter (5k). Encontró problemas reales. Y también me dejó en evidencia.
+Hace unos días escribí que popular no es lo mismo que auditado por ti. Así que apunté mi auditor de agentes open-source a dos de los proyectos de agentes más comentados de GitHub, Everything Claude Code (264k estrellas) y Agentic Bug Hunter (5k). Encontró problemas reales. Y también me dejó en evidencia.
 
 La herramienta es el Agent Audit Kit: un linter estático pequeño, con licencia MIT y sin dependencias, para configs MCP, definiciones de agentes de Claude Code y hooks, mapeado al OWASP Agentic Top 10. Sin red, nada sale de tu máquina.
 

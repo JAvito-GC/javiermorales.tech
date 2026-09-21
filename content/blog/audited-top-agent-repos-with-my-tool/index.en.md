@@ -2,14 +2,14 @@
 title: "I Ran My Agent Auditor Against the Top Agent Repos. It Found Real Bugs, and Embarrassed Me."
 date: 2026-09-21
 description: "I pointed my MIT-licensed agent security linter at ECC (264k stars) and Agentic Bug Hunter (5k). It caught real supply-chain and hook risks, and false positives that taught me more than the wins."
-summary: "I ran my open-source agent auditor against the two most-starred agent repos on GitHub. It found real unpinned MCP servers, out-of-model hooks and risky installers, and it also flagged injection defenses as attacks and nouns as destructive actions. The honest before and after."
+summary: "I ran my open-source agent auditor against two of the most-talked-about agent repos on GitHub. It found real unpinned MCP servers, out-of-model hooks and risky installers, and it also flagged injection defenses as attacks and nouns as destructive actions. The honest before and after."
 translationKey: "audited-top-agent-repos"
 draft: false
 og_image: "/img/og-default.png"
 tags: ["security", "agent-security", "supply-chain", "detection-engineering", "ai-security"]
 ---
 
-A few days ago I wrote that popular is not the same as audited by you. So I pointed my open-source agent auditor at the two most-starred agent projects on GitHub, Everything Claude Code (264k stars) and Agentic Bug Hunter (5k). It found real problems. It also embarrassed me.
+A few days ago I wrote that popular is not the same as audited by you. So I pointed my open-source agent auditor at two of the most-talked-about agent projects on GitHub, Everything Claude Code (264k stars) and Agentic Bug Hunter (5k). It found real problems. It also embarrassed me.
 
 The tool is the Agent Audit Kit: a small, MIT-licensed, zero-dependency static linter for MCP configs, Claude Code agent definitions and hooks, mapped to the OWASP Agentic Top 10. No network, nothing leaves your machine.
 
