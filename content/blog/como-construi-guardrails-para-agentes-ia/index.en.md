@@ -5,6 +5,7 @@ description: "A layered defense system for AI agents with shell access: pre/post
 summary: "AI coding agents have access to your shell, your files, and your credentials. I built a layered defense system with hooks, regex, Unicode normalization, and integrity verification to control what they can do. The project is open source."
 translationKey: "ai-guardrails"
 draft: false
+og_image: "/img/og-guardrails.png"
 tags: ["security", "ai", "claude-code", "open-source", "devtools"]
 ---
 

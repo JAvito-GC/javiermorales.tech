@@ -1,4 +1,4 @@
 ---
 title: "Javier Morales"
-description: "Ingeniero de Automatizacion IA | Constructor Tecnico | Emprendedor. Construyendo sistemas con IA desde Gran Canaria."
+description: "Staff Security Engineer especializado en detection engineering y operaciones de seguridad con IA. Construyendo un SOC autónomo desde Gran Canaria."
 ---

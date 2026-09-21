@@ -2,6 +2,7 @@
 title: "De 8.000 a 3.000 alertas/semana: cómo automaticé el triaje de seguridad con IA"
 date: 2026-04-22
 draft: false
+og_image: "/img/og-alerts.png"
 translationKey: "alert-triage-ai"
 description: "Cómo construí un sistema multi-agente con IA que redujo un 65% el ruido de alertas de seguridad, automatizó el 82% de los cierres y convirtió 45 minutos de triaje matutino en 5."
 tags: ["seguridad", "ia", "automatización", "soc", "mcp", "agentes"]
@@ -198,3 +199,11 @@ La pregunta no es si la IA puede hacer triaje de alertas. Ya puede. La pregunta 
 ---
 
 *Si estás construyendo algo parecido o tienes preguntas sobre la arquitectura, escríbeme. Siempre es más fácil la segunda vez.*
+
+---
+
+**Artículos relacionados:**
+
+- [El IC Score: una fórmula con IA para el triage de alertas](/es/blog/ic-score-formula-ia-triage-alertas-soc/) — la fórmula de scoring ponderado que usamos para decidir qué se escala y qué se cierra automáticamente.
+- [Cómo construí un SOC autónomo con MCP + Claude](/es/blog/como-construi-un-soc-autonomo-con-ia/) — la arquitectura completa del sistema multi-agente.
+- [Detection-as-Code: cómo reduje los falsos positivos un 60%](/es/blog/detection-as-code-60-menos-falsos-positivos/) — el programa de reducción de ruido que complementa el triage con IA.

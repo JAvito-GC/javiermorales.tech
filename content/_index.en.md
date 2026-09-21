@@ -1,4 +1,4 @@
 ---
 title: "Javier Morales"
-description: "AI Automation Engineer | Technical Builder | Solopreneur. Building AI-powered systems from Gran Canaria, Spain."
+description: "Staff Security Engineer focused on detection engineering and AI-driven security operations. Building autonomous SOC tooling from Gran Canaria, Spain."
 ---

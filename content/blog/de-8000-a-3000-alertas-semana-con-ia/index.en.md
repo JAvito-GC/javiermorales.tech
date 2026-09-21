@@ -2,6 +2,7 @@
 title: "From 8,000 to 3,000 Alerts/Week: How I Automated Security Triage with AI"
 date: 2026-04-22
 draft: false
+og_image: "/img/og-alerts.png"
 translationKey: "alert-triage-ai"
 description: "How I built a multi-agent AI system that reduced security alert noise by 65%, automated 82%+ of alert closures, and turned 45 minutes of morning triage into 5."
 tags: ["security", "ai", "automation", "soc", "mcp", "agents"]

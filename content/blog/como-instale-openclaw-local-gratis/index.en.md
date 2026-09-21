@@ -1,10 +1,11 @@
 ---
-title: "How I Installed OpenClaw Locally for 0 EUR"
+title: "How I Installed OpenClaw Locally for Free"
 date: 2026-04-22
 description: "Step-by-step guide to installing OpenClaw on Ubuntu with a local GPU and Qwen 3.6 via OpenRouter. No VPS, no subscriptions, no paid hosting."
 summary: "Nobody has published a local install guide for OpenClaw — everything out there is VPS tutorials with affiliate links. Here's exactly how I set it up on my Ubuntu PC with a 6GB GPU and Qwen 3.6 for free via OpenRouter."
 translationKey: "openclaw-local"
 draft: false
+og_image: "/img/og-openclaw.png"
 tags: ["openclaw", "local-ai", "ollama", "openrouter", "ubuntu"]
 ---
 
